@@ -552,11 +552,11 @@ body.section-switching.up .animation-block {
 }
 .info-list > li > strong {
   letter-spacing: 4px;
-  color: #202020;
+  color: #3d2556;
   text-transform: uppercase;
 }
 .info-list > li > span {
-  color: rgba(0, 0, 0, 0.4);
+  color: #3d2556;
 }
 .services-block .section-header {
   margin-bottom: 80px;
@@ -615,14 +615,14 @@ body.section-switching.up .animation-block {
   z-index: 5;
 }
 .service > .content > h4 {
-  color: #202020;
+  color: #3d2556;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 25px 0;
 }
 .service > .content > p {
   line-height: 1.6em;
-  color: rgba(0, 0, 0, 0.4);
+  color: #3d2556;
   margin: 0;
 }
 .skills-block .section-header {
@@ -727,7 +727,7 @@ body.section-switching.up .animation-block {
 }
 .p-table > .items > li {
   padding: 10px 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: #3d2556;
 }
 .p-table > .header {
   margin-bottom: 35px;
@@ -761,7 +761,7 @@ body.section-switching.up .animation-block {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgba(0, 0, 0, 0.4);
+  color: #3d2556;
 }
 
 /*=======================================================
