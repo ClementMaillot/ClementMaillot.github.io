@@ -1,0 +1,31 @@
+@mixin center-container($width, $height, $padding, $margin) {
+    width: $width;
+    height: $height;
+    text-decoration: none;
+    padding: $padding;
+    margin: $margin;
+}
+
+
+@mixin flex-row($width) {
+    width: $width;
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+}
+
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+
+  @mixin centrer-contenu($width) {
+    display: block;
+    width: $width;
+    box-sizing: border-box;
+    margin: 0 auto;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="guitare-color.png">
+    <script src="js/form.js" defer></script>
+    <title>Blues Music - Participez</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="btn-burger" for="burger">&#9776;</label>
+            <input type="checkbox" id="burger">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" class="btn">
+                        <img src="img/blueslogo.png" alt="Logo">
+                    </a>
+                </li>
+                <li><a href="index.html" class="btn-menu">Accueil</a></li>
+                <li><a href="histoire.html" class="btn-menu">Histoire</a></li>
+                <li><a href="artistes.html" class="btn-menu">Artistes</a></li>
+                <li><a href="courant.html" class="btn-menu">Le Courant</a></li>
+                <li><a href="galerie.html" class="btn-menu">La Galerie</a></li>
+                <li><a href="formulaire.html" class="btn-menu">Participez !</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="formulaire">
+            <section class="participation">
+                <h2>Aidez-nous à agrandir notre répertoire musical !</h2>
+                <p>Envoyez-nous les versions numérisées de vos vinyles à l'adresse suivante : équipeBlues@gmail.com
+                </p>
+            </section>
+
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <article class="pourquoi">
+                    <h3>Comment faire ?</h3>
+                    <p>Tout d’abord, il est important d’être bien équipé et d’avoir des produits de qualité. Certains
+                        appareils Hi-Fi sont en effet plus performants que d’autres pour numériser...</p>
+                    <a href="https://www.maplatine.com/fr/content/345-comment-numeriser-des-disques-vinyles"
+                        class="bouton" target="blank">En
+                        savoir plus</a>
+                </article>
+
+                <div class="barre"></div>
+
+                <article class="ecoutez">
+                    <h3>Vous souhaitez en apprendre plus sur le Blues ?</h3>
+                    <a href="histoire.html" class="bouton">En savoir plus</a>
+                </article>
+
+            </section>
+
+            <div class="barre"></div>
+
+            <section class="inscription">
+                <h2>Vous voulez aller plus loin ? Abonnez-vous à notre infoslettre pour ne rien rater ! </h2>
+                <form action="#" method="get" id="js-form">
+                    <fieldset>
+                        <legend>Inscription</legend>
+                        <div class="erreur" id="js-erreur">Oups, un problème est survenu. Veuillez corriger l'erreur !
+                        </div>
+                        <ul>
+                            <li>
+                                <label for="nom">Nom*</label>
+                                <input type="text" id="nom" placeholder="Nom de famille" required>
+                            </li>
+                            <li>
+                                <label for="prenom">Prénom*</label>
+                                <input type="text" id="prenom" placeholder="Prénom" required>
+                            </li>
+                            <li>
+                                <label for="courriel">Adresse courriel*</label>
+                                <input type="email" id="courriel" placeholder="nom@gmail.com" required>
+                            </li>
+
+                        </ul>
+                        <button type="submit">Envoyer</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="validation">
+                <h2>Inscription</h2>
+                <p>Merci de votre inscription !</p>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <ul class="navigation">
+            <li><a href="index.html" class="btn">Accueil</a></li>
+            <li><a href="histoire.html" class="btn">Histoire</a></li>
+            <li><a href="artistes.html" class="btn">Artistes</a></li>
+            <li><a href="courant.html" class="btn">Le Courant</a></li>
+            <li><a href="galerie.html" class="btn">La Galerie</a></li>
+            <li><a href="formulaire.html" class="btn">Participez !</a></li>
+        </ul>
+        <p>
+            &copy; 2019 Maillot Clément et Marchal Zoé.
+        </p>
+        <p>
+            Réalisé dans le cadre scolaire de deuxième session au
+            collégial.
+        </p>
+    </footer>
+</body>
+
+</html>

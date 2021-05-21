@@ -1,0 +1,30 @@
+{
+    "titre": "Les influences du Blues",
+    "courant": [
+        {
+            "nom": "Le Jazz",
+            "description": "On peut facilement dire que le jazz n'aurait jamais existé sans le blues. On peut aussi dire que le jazz ne s'est pas éloigné de ses racines blues .De plus, ces deux genres musicaux sont très semblables,si bien que certaines personnes on même l'habitude de croire qu'ils ne font qu'un. On peut remarquer que le blues et le jazz on presque les mêmes techniques de bases, les principales différences étant que le jazz est joué plus rapidement et que sa technique est plus développée",
+            "URLimg": "img/Courant/jazz.png"
+        },
+        {
+            "nom": "Le Rhythm and blues",
+            "description": "Le rhythm and blues, ou R&B, est un genre de musique populaire afro-américaine ayant émergé dans les années 19401. Le terme est originellement utilisé par les compagnies de disque pour décrire des albums ciblant uniquement la communauté afro-américaine urbaine, à une époque durant laquelle « un rythme insistant inspiré du jazz » commençait à se populariser2. Le genre mêle des éléments sonores en provenance du gospel, du blues et du jazz.",
+            "URLimg": "img/Courant/r&b.jpg"
+        },
+        {
+            "nom": "La Country",
+            "description": "Comme le blues et le country se sont développés en même temps et dans les même conditions sociales, on ne peut pas vraiment parler d'influence, on parle plutôt d'inter influences. En effet, le country a pris des caractéristiques du blues et le blues a pris des caractéristiques du country. Mais si on regarde uniquement l'influence qu'a eu le blues sur le country, on peut voir qu'elle est considérable. En effet le blues a même permis de créer un sous type de country: le bluegrass. ",
+            "URLimg": "img/Courant/country.jpg"
+        },
+        {
+            "nom": "Le rock",
+            "description": "Le blues a beaucoup influencé le rock. En effet, celui-ci descendant du rock n' roll qui est une adaptation du blues par les blanc. Il a pris plusieurs caractéristiques de celui-ci. Comme par exemple l'utilisation du power chord vient du blues. Le power chord étant commun à tout les types de rock, on peut dire que tout les types de rock ont été influencés par le blues. Cependant, le blues a influencé certains sous-genres du rock plus que d'autres. Si on prend l'exemple du heavy metal, la seule influence du blues sur cette musique est peut-être bien l'utilisation de power chords puisque ce genre s'est beaucoup éloigné de ses racines blues.",
+            "URLimg": "img/Courant/rock.jpg"
+        },
+        {
+            "nom": "Le Rap",
+            "description": "Malgré les apparences, le rap a aussi été influencé par le blues, cependant, cette influence est plutôt sur les textes. En effet, comme le blues, le rap possède des textes recherchés et contestataires. De plus les deux genres musicaux viennent du même environnement social, c'est à dire les quartiers pauvres et les deux styles musicaux ont été créés par les noirs, ce qui peut créer une similitude entres les sujets de textes. Par exemple, un sujet souvent utilisé par les deux genres musicaux est la discrimination raciale.",
+            "URLimg": "img/Courant/rap.jpg"
+        }
+    ]
+}
