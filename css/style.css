@@ -1383,7 +1383,7 @@ body.loaded #preloader .loader {
     margin-bottom: 10px;
   }
   .intro-text > h1 {
-    font-size: 62px;
+    font-size: 32px;
   }
 }
 @media (max-width: 550px) {
