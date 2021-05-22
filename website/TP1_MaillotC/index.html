@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Barbare</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/darkmode.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/galerie.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header id="global-nav">
+      <nav  role="navigation">
+        <div id="menuToggle">
+          <input class="firstInput" type="checkbox" />
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <ul id="menu">
+            <form class="mytheme" name="mytheme">
+              <label class="btToggle">
+                <span class="btn">
+                  <input type="checkbox" name="theme-mode" />
+                  <span class="slider"></span>
+                </span>
+                <span class="label">White mode</span>
+              </label>
+            </form>
+            <li class="logo">
+              <a href="#topsite"
+                ><img id="logosite" src="img/logo-blanc.png" alt="black-logo"
+              /></a>
+            </li>
+            <li><a id="link1" class="link-nav" href="#artiste"> Artiste en vedette</a></li>
+            <li><a id="link2" class="link-nav" href="#galerie"> Galerie</a></li>
+            <li><a id="link3" class="link-nav" href="#event"> Évenement</a></li>
+            <li><a id="link4" class="link-nav" href="#billeterie"> Billeterie</a></li>
+            <li><a id="link5" class="link-nav" href="#partenaire"> Partenaire</a></li>
+            <li><a id="link6" class="link-nav" href="#contact"> Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="topsite">
+        <h1>Festival Vikings à Oslo</h1>
+        <a href="#billeterie" class="btnbillet">Réserver ton billet</a>
+        <div class="video-top">
+          <video
+            autoplay="1"
+            loop="1"
+            autopause="1"
+            muted=""
+            width="100%"
+            height="100%"
+            frameborder="0"
+            src="vids/vikingfest.mp4"
+          ></video>
+        </div>
+      </section>
+      <section id="artiste">
+        <h2>Artiste en vedette</h2>
+        <div class="block-element">
+          <div class="block-img">
+            <img src="img/lisaleblanc.jpg" alt="Lisa LeBlanc" />
+          </div>
+          <div class="block-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/WlIgwjCe-rY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+           ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="galerie">
+        <h2>Photos :</h2>
+            <div class="gallery">
+              <div class="main-image-section">
+                  <img id="main-view" class="main-view" src= "images/1.jpg" onclick= "fullScreenImage();"/>
+                  <div class="caption-container">
+                      <div id="caption">This is the caption</div>
+                      <div id="info">This is info message</div>
+                  </div>
+            </div>
+            <div id= "thumbnails" class="thumbnails"></div>
+          </div>
+      </section>
+      <section id="event">
+        <h2>Les Évènements à venir :</h2>
+        <h3>Premier jour :</h3>
+        <div class="eventJ">   
+          <img src="img/viking/v2.jpg" alt="Guerriers Vikings">
+          <div class="event-text">
+            <p>-Préaparation du concours de costume</p>
+            <p>-Mise en place des combats historique</p>
+            <p>-Repas</p>
+            <p>-Spectacles et combats</p>
+            <p>-Évenement sur scène</p>
+          </div>
+        </div>
+        <h3>Deuxième jour :</h3>
+        <div class="eventJ">  
+          <img src="img/viking/v17.png" alt="Spectacles">
+          <div class="event-text">
+            <p>-Résultats du concours</p>
+            <p>-Présenetation des artistes présents la veille et ce jour</p>
+            <p>-Repas</p>
+            <p>-Rencontre avec des descendants de Vikings</p>
+            <p>-Soirée de Métal Viking</p>
+          </div>
+        </div>
+        
+      </section>
+      <section id="billeterie">
+        <h2>Vente de Billet :</h2>
+        <div class="billet">
+          <div class="billet-visiteur">
+            <h3>Billet Visiteur</h3>
+            <h4>À partir de 199$</h4>
+            <p>Permet d'assister au différentes activités du festival.</p>
+            <a href="#contact" class="btnbillet">Réserver ton billet</a>
+          </div>
+          <div class="billet-viking">
+            <h3>Billet Viking</h3>
+            <h4>À partir de 499$</h4>
+            <p>Permet d'assister et de participer au festival. Seul, les vrai Vikings sont tolérés.</p>
+            <a href="#contact" class="btnbillet">Réserver ton billet</a>
+          </div>
+        </div>
+      </section>
+      <section id="partenaire">
+        <h2>La liste des commanditaires :</h2>
+          <div class="all-commanditaire">
+            <div class="block-commanditaire">
+              <a href="http://familiprix.com" target="_blank">
+                <img src="img/Logos_commanditaires/familiprix.png" alt="Familiprix" />
+              </a>
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://expression.com" target="_blank">
+              <img src="img/Logos_commanditaires/expression.jpg" alt="Expression" />
+            </a>
+          </div>   
+          <div class="block-commanditaire">
+            <a href="http://snclavalin.com" target="_blank">
+              <img src="img/Logos_commanditaires/lavalin.png" alt="SNC Lavalin" />
+            </a>
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://budweiser.com" target="_blank">
+              <img src="img/Logos_commanditaires/budweiser.jpg" alt="Budweiser" />
+            </a>  
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.musicaction.ca" target="_blank">
+              <img src="img/Logos_commanditaires/musicaction.png" alt="Musicaction" />
+            </a>  
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.sleeman.ca" target="_blank">
+              <img src="img/Logos_commanditaires/sleeman.jpg" alt="Sleeman" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://www.lettrageslafontaine.ca/" target="_blank">
+              <img src="img/Logos_commanditaires/lettrage.png" alt="Lettrage Lafontaine"/>
+            </a>
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://www.agropur.ca/" target="_blank">
+              <img src="img/Logos_commanditaires/agropur.png" alt="Agropur" />
+            </a>
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://www.desjardins.ca/" target="_blank">
+              <img src="img/Logos_commanditaires/desjardins.png" alt="Desjardins" />
+            </a>  
+          </div>
+          <div class="block-commanditaire">
+            <a href="http://m.assnat.qc.ca/fr/deputes/hamad-sam-1273/index.html" target="_blank">
+              <img src="img/Logos_commanditaires/samhamd.png" alt="Sam Hamad, Député de Louis-Hébert" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.quebec.ca/tourisme-et-loisirs/" target="_blank">
+              <img src="img/Logos_commanditaires/tourismequebec.png" alt="Tourisme Québec" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.boralex.com/fr/" target="_blank">
+              <img src="img/Logos_commanditaires/boralex.png" alt="Boralex" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.subway.com/fr-CA" target="_blank">
+              <img src="img/Logos_commanditaires/subway.png" alt="Subway" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.hyundaicanada.com/" target="_blank">
+              <img src="img/Logos_commanditaires/hyundai.png" alt="Hyundai" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://www.iheartradio.ca/rouge-fm" target="_blank">
+              <img src="img/Logos_commanditaires/rouge.png" alt="Rouge 107,3 fm" />
+            </a> 
+          </div>
+          <div class="block-commanditaire">
+            <a href="https://numerique.ca" target="_blank">
+              <img src="img/Logos_commanditaires/numeriq.png" alt="Numérique CA" />
+            </a> 
+          </div>
+          </div>
+          
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Formulaire de contact</h2>
+          <form action="/action_page.php">
+            <label for="fname">Nom & prénom</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Votre nom et prénom"
+            />
+
+            <label for="sujet">Sujet</label>
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              placeholder="L'objet de votre message"
+            />
+
+            <label for="emailAddress">Email</label>
+            <input
+              id="emailAddress"
+              type="email"
+              name="email"
+              placeholder="Votre email"
+            />
+
+            <label for="subject">Message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Votre message"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+      </section>
+      <section class="maps">
+        <iframe class="gmap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d128083.26573298128!2d10.645035778120576!3d59.89395286065928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e61f267f039%3A0x7e92605fd3231e9a!2zT3NsbywgTm9ydsOoZ2U!5e0!3m2!1sfr!2sca!4v1598282191670!5m2!1sfr!2sca"
+          width="100%"
+          height="500px"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <section class="socialmedia">
+      <h3>Réseaux sociaux :<h3>
+      <div class="media-icon">
+        <a href="https://facebook.com" target="_blank">f</a>
+        <a href="https://twitter.com" target="_blank">t</a>
+        <a href="https://instagram.com" target="_blank">c</a>
+        <a href="https://snapchat.com" target="_blank">s</a>
+      </div>
+    </section>
+    &copy; Clément Maillot 2020
+  </footer>
+</html>

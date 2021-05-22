@@ -1,0 +1,664 @@
+/* Fonts */
+
+@font-face {
+  font-family: "rune";
+  src: url("../font/rune.ttf");
+}
+@font-face {
+  font-family: "norse";
+  src: url("../font/Norse.otf");
+}
+
+@font-face {
+  font-family: "norseBold";
+  src: url("../font/NorseBold.otf");
+}
+
+@font-face {
+  font-family: "social";
+  src: url("../font/socialmedia.ttf");
+}
+
+/* Corps du site */
+body {
+  font-family: norsebold;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* Menu du site */
+
+.scrolled-nav {
+  font-size: 16px;
+}
+.scrolled-nav #menu {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.scrolled-nav #menu #link1 {
+  position: absolute;
+  top: 0;
+  left: 10vw;
+}
+
+.scrolled-nav #menu #link2 {
+  position: absolute;
+  top: 0;
+  left: 25vw;
+}
+
+.scrolled-nav #menu #link3 {
+  position: absolute;
+  top: 0;
+  left: 35vw;
+}
+
+.scrolled-nav #menu #link4 {
+  position: absolute;
+  top: 0;
+  left: 45vw;
+}
+
+.scrolled-nav #menu #link5 {
+  position: absolute;
+  top: 0;
+  left: 55vw;
+}
+
+.scrolled-nav #menu #link6 {
+  position: absolute;
+  top: 0;
+  left: 65vw;
+}
+.scrolled-nav #menu .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+.nav {
+  display: block;
+  height: 50px;
+}
+
+.logo {
+  height: auto;
+  max-width: 100px;
+  margin-left: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.link-nav {
+  position: relative;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 25px;
+}
+
+#menuToggle input {
+  display: none;
+}
+
+/* Change la couleur des liens quand on survole */
+.link-nav:hover {
+  background-color: #111;
+  color: #cdcdcd;
+}
+
+/* TOP SITE */
+
+#topsite {
+  height: 116vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: norseBold;
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffc800;
+  text-align: center;
+}
+#topsite a {
+  text-decoration: none;
+  color: #cdcdcd;
+  background-color: #333;
+  padding: 20px;
+}
+
+#topsite a:hover {
+  background-color: #111;
+}
+video {
+  max-width: 100%;
+  height: 116vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: -5;
+}
+
+/* ARTISTE */
+
+#artiste {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 116vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 82%;
+  margin: auto;
+}
+.block-img {
+  width: 100%;
+  height: 60vh;
+}
+.block-video {
+  width: 100%;
+  height: 60vh;
+}
+
+/* GALERIE */
+#galerie {
+  height: 116vh;
+  margin: 0 auto;
+}
+
+#galerie h2 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 60vh;
+  background: #7e7f9a;
+  border: 3px solid #f9f9f8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-image-section {
+  width: 80%;
+}
+
+.main-view {
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.caption-container {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100px;
+  bottom: -100px;
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.main-image-section:hover .caption-container {
+  bottom: 0;
+  opacity: 1;
+}
+
+#caption {
+  font-size: 42px;
+  color: #fff;
+  padding: 10px;
+}
+
+#info {
+  padding: 0 10px;
+  color: #ccc;
+}
+
+.thumbnails {
+  width: 20%;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.thumbnails img {
+  width: 100%;
+  opacity: 0.7;
+  cursor: pointer;
+
+  -webkit-transition: opacity 0.3s ease 0s;
+  -moz-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+}
+
+.thumbnails img:focus {
+  opacity: 1;
+}
+
+/* EVENT */
+#event {
+  margin-top: 20px;
+  height: 116vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.eventJ {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.eventJ img {
+  width: 40%;
+}
+
+#event h2 {
+  text-align: center;
+}
+#event h3 {
+  text-align: left;
+  margin-left: 10vw;
+}
+/* BILLET */
+#billeterie {
+  margin-top: 20px;
+  height: 116vh;
+  margin: 0 auto;
+}
+
+.billet {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.billet-visiteur,
+.billet-viking {
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid black;
+}
+
+#billeterie h2 {
+  text-align: center;
+}
+
+#billeterie a {
+  text-decoration: none;
+  color: #cdcdcd;
+  background-color: #333;
+  padding: 7px;
+}
+
+#billeterie a:hover {
+  background-color: #111;
+}
+
+/* COMMANDITAIRES */
+
+#partenaire {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.all-commanditaire {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.block-commanditaire {
+  padding: 20px;
+  width: 20vw;
+  border: 2px solid black;
+  border-radius: 25%;
+}
+
+/* CONTACT */
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #1255a2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1872d9;
+}
+
+.container {
+  margin-top: 20px;
+  /* Ajouter box-sizing */
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin: 0 auto;
+}
+.container h2 {
+  text-align: center;
+}
+h2 {
+  color: #ffc800;
+  width: 100%;
+}
+/* MAP */
+.maps {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.socialmedia {
+  text-align: center;
+}
+.media-icon a {
+  font-family: social;
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+}
+
+.media-icon a:hover {
+  color: rgb(160, 160, 160);
+  background-color: rgb(29, 29, 29);
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+}
+
+/* PHONE AND TABLETTE*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1100px) {
+  /* ARTISTE */
+  .block-element {
+    display: block;
+    margin: 0 auto;
+  }
+  .block-img {
+    height: 80%;
+    margin-bottom: 20px;
+  }
+  .block-video {
+    height: 400px;
+  }
+
+  /* BILLETERIE */
+  .billet {
+    display: block;
+  }
+
+  /* PARTENAIRE */
+  .all-commanditaire {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .block-commanditaire {
+    width: 50%;
+  }
+
+  /* MENU */
+  #menuToggle input:first-child:checked ~ ul {
+    transform: none;
+  }
+  nav {
+    position: none;
+  }
+  #menuToggle {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #000;
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    background-color: #111;
+  }
+
+  #menuToggle input:first-child {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+
+  /* BURGER  */
+
+  #menuToggle span:nth-child(n).burger {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffc800;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:nth-child(-n + 1).burger {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2).burger {
+    transform-origin: 0% 100%;
+  }
+
+  /* BURGER TO CROSS  */
+  #menuToggle input:first-child:checked ~ span.burger {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #cdcdcd;
+  }
+
+  #menuToggle input:first-child:checked ~ span:nth-child(3n).burger {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:first-child:checked ~ span:nth-last-child(2).burger {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 75vw;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 25px;
+    display: block;
+    background: white;
+    color: #000;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 5px 0;
+    font-size: 22px;
+  }
+
+  .mytheme {
+    width: 100%;
+  }
+  .btToggle {
+    position: absolute;
+    top: 8vh;
+    left: 60vw;
+    width: 40%;
+    border-radius: 38px;
+    height: 34px;
+  }
+
+  /* GALERIE*/
+  .gallery {
+    display: block;
+    height: auto;
+  }
+
+  .main-image-section {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #thumbnails .thumbnails {
+    margin: 0;
+  }
+
+  #thumbnails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .thumbnails img {
+    height: auto;
+    width: 25%;
+    margin: 5px;
+  }
+
+  .thumbnails img:last-child() {
+    background-color: green;
+  }
+
+  /*EVENT*/
+  .eventJ {
+    display: block;
+    width: 100%;
+  }
+
+  .event-text {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .eventJ img {
+    width: 100%;
+  }
+
+  #event {
+    margin: 0 auto;
+    height: 140vh;
+  }
+}
+
+/*******************************************************************************/

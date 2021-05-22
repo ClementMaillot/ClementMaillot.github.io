@@ -1,0 +1,126 @@
+/* DARK MODE */
+.mytheme {
+  padding: 5px;
+  margin-left: 90%;
+  width: 20%;
+}
+
+.btToggle .btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  line-height: 34px;
+  color: #cdcdcd;
+}
+
+/* Hide default HTML checkbox */
+.bttoggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.btToggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  border-radius: 34px;
+  white-space: nowrap;
+}
+
+.btToggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+}
+
+.btToggle input:checked + .slider {
+  background-color: #cdcdcd;
+}
+
+.btToggle input:focus + .slider {
+  box-shadow: 0 0 1px #cdcdcd;
+  color: #000;
+}
+
+.label {
+  position: absolute;
+  top: 1vh;
+  margin: 5px;
+}
+.btToggle input:checked + .slider:before {
+  right: 4px;
+  left: auto;
+  background-color: #000;
+}
+
+/* DARK MODE */
+.mode-dark {
+  background-color: #000;
+  color: #cdcdcd;
+}
+
+.mode-dark .mise-en-page-lien .bloc-mise-en-page {
+  background-color: #232323;
+}
+.mode-dark .bloc-lien a:link,
+.mode-dark .bloc-lien a:visited,
+.mode-dark .bloc-lien a {
+  color: #cdcdcd;
+}
+
+.mode-dark .socialmedia .media-icon a {
+  color: rgb(160, 160, 160);
+  background-color: rgb(29, 29, 29);
+  border-radius: 50%;
+}
+
+.mode-dark .socialmedia .media-icon a:hover {
+  color: #cdcdcd;
+  background-color: rgb(29, 29, 29);
+  border-radius: 50%;
+}
+
+.mode-dark .billet-visiteur,
+.billet-viking {
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid #cdcdcd;
+}
+
+.mode-dark .block-commanditaire {
+  padding: 20px;
+  width: 20vw;
+  border: 2px solid #cdcdcd;
+  border-radius: 25%;
+}
+
+.mode-dark .container {
+  background-color: #333;
+}
+
+.mode-dark #menu {
+  background: #333;
+  color: #cdcdcd;
+}
+
+.mode-dark #menuToggle .link-nav {
+  background: #333;
+  color: #cdcdcd;
+}
+
+.mode-dark #menuToggle .link-nav:hover {
+  background: #cdcdcd;
+  color: #333;
+}
