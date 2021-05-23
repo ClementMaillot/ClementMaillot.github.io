@@ -1,0 +1,13 @@
+body {
+    background-color: darksalmon;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Afin de lancer le chargement des polices par le JS, il faut les utiliser dans le CSS*/
