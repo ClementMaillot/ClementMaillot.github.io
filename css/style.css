@@ -1101,7 +1101,7 @@ body.section-switching.up .animation-block {
 }
 .popup-box {
   background: #fff;
-  max-width: 450px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   -webkit-box-shadow: 0 0 0 4px #fff;
