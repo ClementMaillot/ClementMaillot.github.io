@@ -1128,10 +1128,10 @@ body.section-switching.up .animation-block {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 32px;
 }
 .popup-box > .content > p {
-  font-size: 18px;
+  font-size: 24px;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
 }
