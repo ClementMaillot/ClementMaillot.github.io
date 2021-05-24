@@ -1120,17 +1120,17 @@ body.section-switching.up .animation-block {
 .popup-box > .mfp-close:hover {
   background: #fafafa;
 }
-.popup-box > .content {
+.popup-box .content {
   padding: 20px;
   margin: 25% 0;
 }
-.popup-box > .content > h4 {
+.popup-box .content > h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 32px;
 }
-.popup-box > .content > p {
+.popup-box .content > p {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.45);
   font-weight: 500;
