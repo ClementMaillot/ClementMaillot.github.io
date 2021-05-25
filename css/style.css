@@ -1124,6 +1124,13 @@ body.section-switching.up .animation-block {
   padding: 20px;
   margin: 25% 0;
 }
+
+#popup-9 .content,
+#popup-10 .content,
+#popup-11 .content,
+#popup-12 {
+  margin: 0;
+}
 .popup-box .content > h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
